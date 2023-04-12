@@ -1,75 +1,65 @@
-/* Main Styles */
+/* CSS for Portfolio Website */
 
+/* Global styles */
 body {
-  font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f2f2f2;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  background-image: url('background.jpg');
+  background-size: cover;
+  background-position: center;
+  color: #333;
 }
 
-.container {
-  max-width: 960px;
-  margin: 0 auto;
-  padding: 20px;
+a {
+  color: #333;
+  text-decoration: none;
 }
 
-/* Header Styles */
-
-header {
-  background-color: #0077b5;
-  color: #fff;
-  padding: 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+a:hover {
+  text-decoration: underline;
 }
 
-.logo {
-  font-size: 32px;
-  font-weight: bold;
-  text-transform: uppercase;
+nav {
+  background-color: #fff;
+  padding: 10px;
+  text-align: center;
 }
 
 nav ul {
-  list-style: none;
-  display: flex;
   margin: 0;
   padding: 0;
+  list-style: none;
 }
 
-nav li {
+nav ul li {
+  display: inline-block;
   margin: 0 10px;
 }
 
-nav a {
-  color: #fff;
-  text-decoration: none;
-  font-size: 18px;
-  font-weight: bold;
-  text-transform: uppercase;
+nav ul li a {
+  font-size: 20px;
 }
 
-/* Main Content Styles */
+header {
+  text-align: center;
+  margin-top: 100px;
+}
 
 h1 {
-  font-size: 36px;
-  font-weight: bold;
-  margin-top: 40px;
+  font-size: 48px;
   margin-bottom: 20px;
 }
 
-h2 {
-  font-size: 24px;
-  font-weight: bold;
-  margin-top: 40px;
-  margin-bottom: 20px;
+main {
+  margin: 50px;
 }
 
 p {
-  font-size: 18px;
+  font-size: 20px;
   line-height: 1.5;
-  margin-top: 0;
-  margin-bottom: 20px;
 }
 
 ul {
@@ -79,72 +69,8 @@ ul {
 }
 
 li {
-  margin-bottom: 10px;
-}
-
-/* Footer Styles */
-
-footer {
-  background-color: #fff;
-  color: #000;
-  padding: 20px;
-  text-align: center;
-}
-
-/* Contact Form Styles */
-
-.form-container {
-  max-width: 500px;
-  margin: 0 auto;
-  background-color: #fff;
-  padding: 20px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-}
-
-.form-group {
   margin-bottom: 20px;
 }
 
-.form-group label {
-  display: block;
-  font-size: 18px;
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-
-.form-group input,
-.form-group textarea {
-  width: 100%;
-  padding: 10px;
-  font-size: 16px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
-.form-group textarea {
-  height: 150px;
-}
-
-.form-group input:focus,
-.form-group textarea:focus {
-  outline: none;
-  border-color: #0077b5;
-}
-
-.form-submit {
-  display: inline-block;
-  background-color: #0077b5;
-  color: #fff;
-  padding: 10px 20px;
-  font-size: 18px;
-  font-weight: bold;
-  text-transform: uppercase;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.form-submit:hover {
-  background-color: #005ea2;
-}
+h2 {
+  font-size: 24px;
